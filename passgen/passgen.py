@@ -129,7 +129,7 @@ def handle_password(password):
 
     while True:
         print("\nWhat would you like to do?")
-        print("[1] Copy password")
+        print("[1] Copy password & exit")
         print("[2] Generate again")
         print("[3] Exit")
 
@@ -137,6 +137,8 @@ def handle_password(password):
 
         if choice == "1":
             copy_to_clipboard(password)
+            print("\nGoodbye! 👋")
+            return False
 
         elif choice == "2":
             return True
